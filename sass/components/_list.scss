@@ -1,0 +1,36 @@
+.list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap:30px; 
+
+    &--socials{
+        gap:10px;
+    }
+    &--address{
+        flex-direction: column;
+        gap:12px;        
+        padding-top: 28px;
+    }
+    &--buttons{
+        gap:8px;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    &--cards{
+        flex-wrap: wrap;
+    }
+
+        // &__item:not(:first-child){
+        //     margin-left: 40px;
+        // }
+}
+.nav__list{
+    gap:50px;
+}
+.header__list{
+    gap:40px;
+    margin-left: auto;
+    align-items: center;
+}

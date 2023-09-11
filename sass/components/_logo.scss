@@ -1,0 +1,16 @@
+.logo {
+    @include setFont(700,26px,0.78px,1.17,'Raleway'); 
+    text-decoration: none;
+    color: $color-brand;
+    &--black-ended{
+        color: $color-black;
+    }
+    &--white-ended{
+        color:$color-white;
+    }
+   
+}
+ .header__logo{
+        margin-right: 93px;
+        align-self: center;
+    }
