@@ -27,22 +27,27 @@
           <a class="logo header__logo" href="./index.html"
             >Web<span class="logo logo--black-ended">Studio</span></a
           >
-          <ul class="list">
-            <li class="nav__item">
+          <button class="mobile-menu__toggle js-open-menu">
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <ul class="list nav__list">
+            <li>
               <a class="nav__link" href="./index.html">Студія</a>
             </li>
-            <li class="nav__item">
+            <li>
               <a class="nav__link nav__link--current" href="./portfolio.html"
                 >Портфоліо</a
               >
             </li>
-            <li class="nav__item">
+            <li>
               <a class="nav__link" href="#">Контакти</a>
             </li>
           </ul>
         </nav>
         <ul class="list header__list">
-          <li class="list__item">
+          <li>
             <a
               class="nav__link nav__link--contact"
               href="mailto:info@devstudio.com"
@@ -53,7 +58,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li class="list__item">
+          <li>
             <a class="nav__link nav__link--contact" href="tel:+380961111111">
               <svg class="nav__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
@@ -93,16 +98,42 @@
               </button>
             </li>
           </ul>
-          <ul class="list list--cards">
+          <ul class="list">
             <li class="card">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-                  <img
-                    class="card__img"
-                    src="./images/technocriack.jpg"
-                    alt="Технокряк"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/technocriak-450.jpg 450w,
+                        ./images/technocriak-900.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/technocriak-d-370.jpg 370w,
+                        ./images/technocriak-d-740.jpg 740w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/technocriak-t-354.jpg 354w,
+                        ./images/technocriak-t-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/technocriak-450.jpg"
+                      alt="Технокряк"
+                    />
+                  </picture>
                   <div class="card__overlay">
                     <p class="card__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -121,12 +152,38 @@
             <li class="card">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-                  <img
-                    class="card__img"
-                    src="./images/new_orlean_poster.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/new_orlean_poster-450.jpg 450w,
+                        ./images/new_orlean_poster-900.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/new_orlean_poster-d-370.jpg 370w,
+                        ./images/new_orlean_poster-d-740.jpg 740w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/new_orlean_poster-t-354.jpg 354w,
+                        ./images/new_orlean_poster-t-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/new_orlean_poster-450.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                    />
+                  </picture>
                   <div class="card__overlay">
                     <p class="card__overlay-text"></p>
                   </div>
@@ -140,12 +197,34 @@
             <li class="card">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-                  <img
-                    class="card__img"
-                    src="./images/seafood_rest.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/seafood_rest-450.jpg 450w,
+                        ./images/seafood_rest-900.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw" />
+
+                    <source
+                      srcset="
+                        ./images/seafood_rest-d-370.jpg 370w,
+                        ./images/seafood_rest-d-740.jpg 740w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px" />
+                    <source
+                      srcset="
+                        ./images/seafood_rest-t-354.jpg 354w,
+                        ./images/seafood_rest-t-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px" />
+                    <img
+                      class="card__img"
+                      src="./images/seafood_rest-450.jpg"
+                      alt="Ресторан Seafood"
+                  /></picture>
                   <div class="card__overlay">
                     <p class="card__overlay-text"></p>
                   </div>
@@ -160,12 +239,38 @@
             <li class="card">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-                  <img
-                    class="card__img"
-                    src="./images/prime_project.jpg"
-                    alt="Проєкт Prime"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/prime_project-450.jpg 450w,
+                        ./images/prime_project-900.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/prime_project-d-370.jpg 370w,
+                        ./images/prime_project-d-740.jpg 740w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/prime_project-t-354.jpg 354w,
+                        ./images/prime_project-t-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/prime_project-450.jpg"
+                      alt="Проєкт Prime"
+                    />
+                  </picture>
                   <div class="card__overlay">
                     <p class="card__overlay-text"></p>
                   </div>
@@ -179,12 +284,38 @@
             <li class="card">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-                  <img
-                    class="card__img"
-                    src="./images/boxes_project.jpg"
-                    alt="Проєкт Boxes"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/boxes_project-450.jpg 450w,
+                        ./images/boxes_project-900.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/boxes_project-d-370.jpg 370w,
+                        ./images/boxes_project-d-740.jpg 740w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/boxes_project-t-354.jpg 354w,
+                        ./images/boxes_project-t-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/boxes_project-450.jpg"
+                      alt="Проєкт Boxes"
+                    />
+                  </picture>
                   <div class="card__overlay">
                     <p class="card__overlay-text"></p>
                   </div>
@@ -198,12 +329,38 @@
             <li class="card">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-                  <img
-                    class="card__img"
-                    src="./images/inspiration.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/inspiration-450.jpg 450w,
+                        ./images/inspiration-900.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/inspiration-d-370.jpg 370w,
+                        ./images/inspiration-d-740.jpg 740w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/inspiration-t-354.jpg 354w,
+                        ./images/inspiration-t-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/inspiration-450.jpg"
+                      alt="Inspiration has no Borders"
+                    />
+                  </picture>
                   <div class="card__overlay">
                     <p class="card__overlay-text"></p>
                   </div>
@@ -217,12 +374,38 @@
             <li class="card">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-                  <img
-                    class="card__img"
-                    src="./images/limited_edition.jpg"
-                    alt="Видання Limited Edition"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/limited_edition-450.jpg 450w,
+                        ./images/limited_edition-900.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/limited_edition-d-370.jpg 370w,
+                        ./images/limited_edition-d-740.jpg 740w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/limited_edition-t-354.jpg 354w,
+                        ./images/limited_edition-t-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/limited_edition-450.jpg"
+                      alt="Видання Limited Edition"
+                    />
+                  </picture>
                   <div class="card__overlay">
                     <p class="card__overlay-text"></p>
                   </div>
@@ -236,12 +419,38 @@
             <li class="card">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-                  <img
-                    class="card__img"
-                    src="./images/lab_project.jpg"
-                    alt="Проєкт LAB"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/lab_project-450.jpg 450w,
+                        ./images/lab_project-900.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/lab_project-d-370.jpg 370w,
+                        ./images/lab_project-d-740.jpg 740w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/lab_project-t-354.jpg 354w,
+                        ./images/lab_project-t-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/lab_project-450.jpg"
+                      alt="Проєкт LAB"
+                    />
+                  </picture>
                   <div class="card__overlay">
                     <p class="card__overlay-text"></p>
                   </div>
@@ -255,12 +464,38 @@
             <li class="card">
               <a class="card__link" href="#">
                 <div class="card__thumb">
-                  <img
-                    class="card__img"
-                    src="./images/growing_business.jpg"
-                    alt="Growing Business"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/growing_business-450.jpg 450w,
+                        ./images/growing_business-900.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/growing_business-d-370.jpg 370w,
+                        ./images/growing_business-d-740.jpg 740w
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/growing_business-t-354.jpg 354w,
+                        ./images/growing_business-t-708.jpg 708w
+                      "
+                      media="(min-width: 768px)"
+                      sizes="354px"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/growing_business-450.jpg"
+                      alt="Growing Business"
+                    />
+                  </picture>
                   <div class="card__overlay">
                     <p class="card__overlay-text"></p>
                   </div>
@@ -361,5 +596,75 @@
         </form>
       </div>
     </footer>
+    <div class="mobile-menu__container js-menu-container" id="mobile-menu">
+      <ul class="mobile-menu">
+        <li>
+          <a class="mobile-menu__link" href="./index.html">Студія</a>
+        </li>
+        <li>
+          <a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li>
+          <a class="mobile-menu__link" href="#">Контакти</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu">
+        <li>
+          <a
+            class="mobile-menu__link mobile-menu__link--tel"
+            href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li>
+          <a
+            class="mobile-menu__link mobile-menu__link--mail"
+            href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <ul class="list list--socials">
+          <li>
+            <a
+              class="mobile-menu__link mobile-menu__link--social mobile-menu__link--right-bordered"
+              href="#"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              class="mobile-menu__link mobile-menu__link--social mobile-menu__link--right-bordered"
+              href="#"
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a
+              class="mobile-menu__link mobile-menu__link--social mobile-menu__link--right-bordered"
+              href="#"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a class="mobile-menu__link mobile-menu__link--social" href="#"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </ul>
+
+      <button class="mobile-menu__toggle js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-close_40px"></use>
+        </svg>
+      </button>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

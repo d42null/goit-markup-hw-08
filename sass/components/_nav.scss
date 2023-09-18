@@ -1,9 +1,14 @@
 .nav{
-    display: flex;    
+    display: flex; 
+    justify-content: space-between;  
+    align-items: center; 
+    @media screen and (max-width:767px) {
+        padding: 10px;
+    }    
     &__link {
         display: inline-block;
         padding-top: 32px;
-        padding-bottom: 32px;
+        padding-bottom: 32px;            
         @include setFont(500,14px,0.28px);
         text-decoration: none;
         color: $color-primary;
@@ -14,6 +19,10 @@
         }
         
         &--contact{
+            @media screen and (max-width:1199px) {
+                font-size: 12px;
+                letter-spacing: 0.24px;
+            }            
             display: flex;
             align-items: center;
             padding: 0;
@@ -35,9 +44,13 @@
         }
         
     }
+   
     &__icon {
-        margin-right: 10px;
-        fill: currentColor;
+        margin-right: 8px;
+        @media screen and (min-width:$desktop) {
+            margin-right: 10px;
+        }        
+        fill: currentColor;        
     }
         // &__item:not(:first-child) {
         //     margin-left: 50px;

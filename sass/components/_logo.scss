@@ -1,16 +1,27 @@
 .logo {
-    @include setFont(700,26px,0.78px,1.17,'Raleway'); 
+    @include setFont(700,24px,0.72px,normal,$logo-font-family); 
     text-decoration: none;
     color: $color-brand;
+    @media screen and (min-width:769px){
+        font-size: 26px;            
+        letter-spacing: 0.78px;
+    }
+
     &--black-ended{
-        color: $color-black;
+        color: $color-primary;
     }
     &--white-ended{
         color:$color-white;
     }
    
 }
- .header__logo{
-        margin-right: 93px;
-        align-self: center;
+ .header__logo{ 
+        @media screen and (min-width:481px) {
+                margin-right: 88px;
+            }
+        @media screen and (min-width:769px) {
+            margin-right: 93px;
+        }
+        
+        // align-self: center;
     }

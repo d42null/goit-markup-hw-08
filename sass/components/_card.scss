@@ -1,10 +1,19 @@
 .card{
-    flex-basis: calc((100% - 60px) / 3);
+        flex-basis: 100%;
+    @media screen and (min-width:$tablet) {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width:$desktop) {
+        flex-basis: calc((100% - 2*30px) / 3);
+    }
+    
     background-color: $color-white;
     &__link{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        text-decoration: none;
+        text-decoration: none;        
         &:hover,
         &:focus{
             box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
@@ -17,6 +26,8 @@
     }
     &__img{
         display:block;
+        width: 100%;
+        height: auto;
     }
     &__overlay{
         position: absolute;
@@ -42,7 +53,8 @@
     &__text-container{
         padding: 20px 24px;
         border: 1px solid $color-border;
-        border-top:none;        
+        border-top:none;
+        flex-grow: 1;
     }
     &__title{
         @include setFont(700,18px,1.08px,2);
@@ -53,6 +65,7 @@
         @include setFont(400, 16px, 0.48px, 1.875);
         color: $color-secondary;
         margin: 0;
+        
     }
 
 }
