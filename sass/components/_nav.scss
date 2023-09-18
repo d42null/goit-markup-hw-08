@@ -1,9 +1,9 @@
 .nav{
-    display: flex; 
-    justify-content: space-between;  
-    align-items: center; 
-    @media screen and (max-width:767px) {
-        padding: 10px;
+    display:flex;     
+    align-items: center;    
+    @media screen and (max-width:($tablet - 1px)) {
+        padding: 10px; 
+        justify-content: space-between;       
     }    
     &__link {
         display: inline-block;
@@ -19,7 +19,7 @@
         }
         
         &--contact{
-            @media screen and (max-width:1199px) {
+            @media screen and (max-width:($desktop - 1px)) {
                 font-size: 12px;
                 letter-spacing: 0.24px;
             }            
@@ -46,13 +46,11 @@
     }
    
     &__icon {
-        margin-right: 8px;
+        @media screen and (max-width:($desktop - 1px)) {
+            margin-right: 8px;
+        }
         @media screen and (min-width:$desktop) {
             margin-right: 10px;
-        }        
-        fill: currentColor;        
+        }
     }
-        // &__item:not(:first-child) {
-        //     margin-left: 50px;
-        // }
 }
