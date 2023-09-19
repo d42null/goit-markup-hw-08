@@ -4,10 +4,10 @@
     left: 50%;
     width:100%;
     max-width: 450px;
-    min-height: 609px;
+    max-height: 609px;
     @media screen  and (min-width:$desktop){
         max-width: 528px;
-        min-height: 581px;
+        max-height: 581px;
     }
     
     padding: 40px;
